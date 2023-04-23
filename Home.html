@@ -9,8 +9,29 @@
 </marquee>	
 <link rel="stylesheet" type="text/css" href="roscoe.css">
 <div class="container">
-	<form action="https://www.google.com/Search" method="get" class="Search-bar">
+	<form action="https://www.google.com/Search"method="get" class="Search-bar">
 		<input type="text" placeholder="Search" name="q">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Bar Example</title>
+  <script>
+    function search() {
+      var input = document.getElementById("searchInput").value;
+      // You can use the input value to perform your search logic here
+      // For example, you can make an API request to a server to fetch search results
+      // or perform client-side filtering on a list of items based on the input
+      alert("Searching for: " + input);
+    }
+  </script>
+</head>
+<body>
+  <h1>Search Bar Example</h1>
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button onclick="search()">Search</button>
+</body>
+</html>
+
 		<button type="submit"><img src="1m.png" height="15px"></button>
 	</form>
 </div>
